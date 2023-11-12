@@ -123,7 +123,7 @@ def main():
 
 
     items, subtotal = summarize_order(order)
-    print('your oders are: ', items, 'and your total = ', str(subtotal) )
+    print('your oders are: ', items, 'and your total = $', str(subtotal) )
 
 if __name__ == "__main__":
     main()
