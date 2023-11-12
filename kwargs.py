@@ -8,12 +8,12 @@ print(sum(3, 4, 4))
 
 # alternatively for args
 
-def sum(*args):
+def sum1(*args):
     sum = 0
     for x in args:
         sum += x
     return sum
-print(sum(1, 3.5, 3, 8, 33.1))
+print(sum1(1, 3.5, 3, 8, 33.1))
 
 # kwargs example
 def sum(**kwargs):
