@@ -16,7 +16,8 @@ def read_file(file_name):
     ### WRITE SOLUTION HERE
     with open(file_name, 'r') as file:
         file_content = file.read()
-        print(file_content)
+        file_content = '\n'+ file_content + '\n'
+        print(file_content)      
         return file_name
     raise NotImplementedError()
 
@@ -64,7 +65,7 @@ def write_first_line_to_file(file_contents, output_filename):
 
     with open(output_filename, 'w') as w_file:
         w_file.write(r_line)
-        return
+        return '\n'
 
     raise NotImplementedError()
 
@@ -86,7 +87,7 @@ def read_even_numbered_lines(file_name):
     ### WRITE SOLUTION HERE
     with open(file_name, 'r') as file_given:
         f_file = file_given.readlines()[1::2]
-        return f_file
+        return '\n', f_file
         
     raise NotImplementedError()
 
