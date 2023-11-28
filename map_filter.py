@@ -1,5 +1,5 @@
 # this example show how map function works
-countries = ["Nigeria", "Ghana", "Zimbawe", "Senegal","Central Africa"]
+countries = ["Niger", "Nigeria", "Ghana", "Zimbawe", "Senegal","Central Africa"]
 
 def find_countries(str):
     if str[0] == 'N':
@@ -20,3 +20,10 @@ print(filter_country)
 
 for x in filter_country:
     print(x)
+
+numbers = [15, 30, 47, 82, 95]
+def lesser(numbers):
+   return numbers < 50
+
+small = list(filter(lesser, numbers))
+print(small)
